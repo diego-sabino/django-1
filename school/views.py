@@ -1,7 +1,7 @@
 from django.http import JsonResponse
 from rest_framework import viewsets
 from school.models import Student, Course
-from serializer import StudentSerializer, CourseSerializer
+from school.serializer import StudentSerializer, CourseSerializer
 
 class StudentsViewSet(viewsets.ModelViewSet):
   queryset = Student.objects.all()
