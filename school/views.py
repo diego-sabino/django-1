@@ -10,3 +10,6 @@ class StudentsViewSet(viewsets.ModelViewSet):
 class CourseViewSet(viewsets.ModelViewSet):
   queryset = Course.objects.all()
   serializer_class = CourseSerializer
+
+
+# aula 4 nao teve nada :c
