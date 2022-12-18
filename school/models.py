@@ -22,3 +22,15 @@ class Course(models.Model):
 
   def __str__(self):
     return self.description
+
+
+class Registration(models.Model):
+  TIMECOURSE = (
+    ('M', 'Morning'),
+    ('A', 'Afternoon'),
+    ('N', 'Night'),
+  )
+
+  student = models.ForeignKey(Student, on_delete=models.CASCADE)
+  course = models.ForeignKey(Course, on_delete=models.CASCADE)
+  timeCourse = models.CharField(max_length=1, choices=TIMECOURSE, blank=False, null=False, default='M')
