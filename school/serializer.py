@@ -20,3 +20,10 @@ class RegistrationStudentSerializer(serializers.ModelSerializer):
   class Meta:
     model = Registration
     fields = ['course', 'timeCourse']
+
+class RegistrationStudentSerializer(serializers.ModelSerializer):
+  class Meta:
+    model = Registration
+    fields = ['course', 'timeCourse']
+
+#atividade 2 incompleta
