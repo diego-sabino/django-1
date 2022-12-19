@@ -15,3 +15,8 @@ class RegistrationSerializer(serializers.ModelSerializer):
   class Meta:
     model = Registration
     fields = '__all__'
+
+class RegistrationStudentSerializer(serializers.ModelSerializer):
+  class Meta:
+    model = Registration
+    fields = ['course', 'timeCourse']
